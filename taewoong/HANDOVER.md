@@ -1,0 +1,11 @@
+# 실행·인수인계
+- GitHub: https://github.com/ryan-54/statistics-dashboard / main / taewoong/
+- 앱: https://taewoong-financial-review-2026.tinyangel20.chatgpt.site
+- 실행 진입점: taewoong/dist/index.html. Node.js는 검증 스크립트에만 사용합니다.
+- 접근: GitHub 비공개, 앱 소유자 전용. 제출 전 검토자 접근 설정을 별도로 완료해야 합니다.
+- GitHub는 소스·변경기록 보관, Sites는 앱 제공. 현재 GitHub push가 Sites 자동 재배포를 발생시키지는 않습니다.
+- 현행 앱은 고정 공시자료이며 데이터 기준은 2026년 상반기까지입니다. 갱신일과 자료 기준일을 혼동하지 않습니다.
+- 갱신: 원공시 확보 → CSV와 data.js 및 관련 세부값 수정 → node verify.mjs → 브라우저 필터·다운로드 확인 → GitHub 커밋 → Sites 버전 배포.
+- 갱신 실패: 이전 정상본 유지, 오류와 수정 담당 기록, 수치 대조 후 재시도. 복구는 이전 정상 커밋·Sites 버전으로 수행합니다.
+- 담당 제안: 김승범이 원문 대조·제출 접근 확인 및 사용자 인수를 수행. AI는 구현·기술 검사 보조. 실제 업무 승인이나 동료 피드백은 수행하지 않았습니다.
+- 인수 판정: 조건부 가능. 기술 검산·데스크톱 기능 확인 완료, 세부 원문 재대조와 타인 접근·사용자 인수는 미완료.

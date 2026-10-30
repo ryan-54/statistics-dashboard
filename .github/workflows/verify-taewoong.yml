@@ -1,0 +1,21 @@
+name: Verify Taewoong dashboard
+on:
+  push:
+    paths: ['taewoong/**', '.github/workflows/verify-taewoong.yml']
+  pull_request:
+    paths: ['taewoong/**', '.github/workflows/verify-taewoong.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and financial verification
+        working-directory: taewoong
+        run: |
+          node --check dist/app.js
+          node verify.mjs
